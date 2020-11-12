@@ -1,0 +1,22 @@
+@mixin Button {
+  border-radius: 5px;
+
+  outline: 0;
+  border: 0;
+  background-color: $lime;
+  cursor: pointer;
+  color: $dark;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: $orangeRed;
+    transition: all 100ms linear;
+    color: $light;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

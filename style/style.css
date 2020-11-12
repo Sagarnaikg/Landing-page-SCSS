@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #222121;
+  font-weight: bolder;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  height: 9vh;
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 0px 20px;
+}
+.navbar .navbar_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar_logo {
+  font-size: 1.5rem;
+}
+.navbar .navbar_links {
+  display: none;
+}
+.navbar .navbar_links a:hover {
+  color: #00cc66;
+}
+@media screen and (min-width: 700px) {
+  .navbar {
+    padding: 0 40px;
+  }
+  .navbar .navbar_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .navbar .navbar_menu_icon {
+    display: none;
+  }
+  .navbar .navbar_links {
+    justify-self: end;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .navbar_links .navbar_btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    background-color: #00cc66;
+    cursor: pointer;
+    color: #222121;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .navbar .navbar_links .navbar_btn:hover {
+    background-color: #fb4b4e;
+    transition: all 100ms linear;
+    color: #f7f7f7;
+  }
+  .navbar .navbar_links .navbar_btn:active {
+    transform: scale(0.95);
+  }
+  .navbar .navbar_links .navbar_btn:hover {
+    background-color: #2541b2;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .navbar {
+    padding: 0px 50px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .navbar {
+    height: 11vh;
+  }
+  .navbar .navbar_container {
+    max-width: 1400px;
+    margin: auto;
+  }
+  .navbar .navbar_links {
+    font-size: 1.2rem;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 91vh;
+  background-color: #f7f7f7;
+  padding: 0 20px;
+}
+.hero .hero_content_left {
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  padding-top: 6vh;
+}
+.hero .hero_content_left h1 {
+  color: #00cc66;
+  font-size: min(9.5vw, 45px);
+}
+.hero .hero_content_left p {
+  font-size: 2vh;
+  margin: 3vh 0;
+  color: #222121;
+}
+.hero .hero_content_left .hero_btn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  background-color: #00cc66;
+  cursor: pointer;
+  color: #222121;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.hero .hero_content_left .hero_btn:hover {
+  background-color: #fb4b4e;
+  transition: all 100ms linear;
+  color: #f7f7f7;
+}
+.hero .hero_content_left .hero_btn:active {
+  transform: scale(0.95);
+}
+.hero .hero_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hero .hero_content_right {
+  width: 100%;
+}
+.hero .hero_content_right img {
+  float: right;
+  width: min(400px, 90%);
+}
+@media screen and (min-width: 700px) {
+  .hero {
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero {
+    padding: 50px;
+  }
+  .hero .hero_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero .hero_content_left h1 {
+    font-size: min(9.5vw, 60px);
+  }
+  .hero .hero_content_left p {
+    font-size: 2.5vh;
+  }
+  .hero .hero_content_left .hero_btn {
+    font-size: 1rem;
+    padding: 15px 50px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    background-color: #00cc66;
+    cursor: pointer;
+    color: #222121;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .hero .hero_content_left .hero_btn:hover {
+    background-color: #fb4b4e;
+    transition: all 100ms linear;
+    color: #f7f7f7;
+  }
+  .hero .hero_content_left .hero_btn:active {
+    transform: scale(0.95);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero {
+    height: 89vh;
+  }
+  .hero .hero_container {
+    max-width: 1400px;
+    margin: auto;
+  }
+  .hero .hero_content_right {
+    display: flex;
+  }
+  .hero .hero_content_right img {
+    margin: auto;
+    float: none;
+    width: min(500px, 90%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
